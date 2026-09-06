@@ -1,0 +1,7 @@
+node_modules
+.docusaurus
+build
+.env
+.env.*
+!.env.example
+*.log

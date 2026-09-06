@@ -1,0 +1,24 @@
+/**
+ * Overrides Infima's default palette with a color scheme closer to the
+ * rest of StreamGive's brand — everything else is left at the theme's
+ * sensible defaults.
+ */
+:root {
+  --ifm-color-primary: #0ea5e9;
+  --ifm-color-primary-dark: #0b8dcb;
+  --ifm-color-primary-darker: #0a85c0;
+  --ifm-color-primary-darkest: #086e9e;
+  --ifm-color-primary-light: #21aeed;
+  --ifm-color-primary-lighter: #2fb4ee;
+  --ifm-color-primary-lightest: #5cc4f1;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #38bdf8;
+  --ifm-color-primary-dark: #17b1f7;
+  --ifm-color-primary-darker: #08a8ed;
+  --ifm-color-primary-darkest: #078ac4;
+  --ifm-color-primary-light: #59c9f9;
+  --ifm-color-primary-lighter: #69cef9;
+  --ifm-color-primary-lightest: #96defb;
+}
