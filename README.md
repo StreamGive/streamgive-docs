@@ -21,6 +21,24 @@ Deploys automatically to GitHub Pages on every push to `main` (see
 it in the repo: **Settings → Pages → Source → GitHub Actions**. The
 workflow won't publish anything until that's set.
 
+## Versioning
+
+Docusaurus's versioning is set up but not yet used — there's only ever
+been one release, so there's nothing to freeze a snapshot of yet. Cut a
+version once these docs would otherwise need to diverge for two audiences
+at once — the clearest trigger is a mainnet deployment, where "current"
+docs start describing mainnet but testnet-era docs are still worth
+keeping around:
+
+```
+npm run version 1.0.0
+```
+
+This snapshots everything currently in `docs/` into `versioned_docs/` and
+`versioned_sidebars/`, and adds `1.0.0` to `versions.json`. From then on,
+`docs/` is always "next" (unreleased/in-progress) documentation, and the
+versioned snapshot is what most readers see by default.
+
 ## Related repositories
 
 - [streamgive-contracts](https://github.com/streamgive/streamgive-contracts) — Soroban smart contracts

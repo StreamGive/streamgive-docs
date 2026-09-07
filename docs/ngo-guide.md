@@ -70,5 +70,6 @@ A few things worth knowing:
 ## 5. Embedding a donate button on your own site
 
 Every verified NGO gets an embeddable widget from their `/ngo-admin` page
-so donors can start a stream without leaving your website. There's a
-dedicated guide for that once you're ready to add it.
+so donors can start a stream without leaving your website. See
+[Integrating the donate widget](./embed-widget.md) when you're ready to
+add it.

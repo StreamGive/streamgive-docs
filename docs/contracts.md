@@ -68,8 +68,8 @@ no data.
 
 Holds every stream's escrowed balance. Notably, **this contract doesn't
 check ngo-registry at all** — `create_stream` accepts any address as the
-NGO, verified or not. The deployment guide (coming soon) covers why
-that's a deliberate choice and what it means operationally.
+NGO, verified or not. [Deploying the contracts](./deploying-contracts.md#operational-note-the-registry-and-the-vault-dont-check-each-other)
+covers why that's a deliberate choice and what it means operationally.
 
 ### Storage
 

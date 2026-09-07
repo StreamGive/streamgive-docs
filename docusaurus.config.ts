@@ -21,7 +21,20 @@ const config: Config = {
   markdown: {
     mermaid: true,
   },
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: [
+    '@docusaurus/theme-mermaid',
+    [
+      // Self-hosted, build-time search index — no external account or API
+      // key to provision, unlike Algolia DocSearch.
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['en'],
+        indexBlog: false,
+        docsRouteBasePath: '/',
+      },
+    ],
+  ],
 
   i18n: {
     defaultLocale: 'en',

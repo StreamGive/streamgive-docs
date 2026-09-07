@@ -69,8 +69,8 @@ having to scan on-chain event history itself on every page load.
 The backend also owns a few things that have no on-chain equivalent at
 all: the NGO application intake form, admin review of those applications,
 and outbound notifications. Those are genuinely backend-owned state, not a
-mirror of anything — the API reference page (coming soon) covers the full
-split.
+mirror of anything — see the [API reference](./api-reference.md) for the
+full split.
 
 Critically, **the backend never holds funds or signs transactions.** Every
 contract call in the system is built and signed in the donor's or NGO's

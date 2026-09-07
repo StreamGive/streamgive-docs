@@ -53,5 +53,7 @@ StreamGive is split across four repos:
 - **[streamgive-frontend](https://github.com/streamgive/streamgive-frontend)** — the donor and NGO web app.
 - **streamgive-docs** — this site.
 
-More on how these fit together is coming in the next few pages —
-architecture, deployment, and contributing guides.
+See [Architecture](./architecture.md) for how these fit together,
+[Deploying the contracts](./deploying-contracts.md) to run your own
+instance, or [Contributing](./contributing.md) to work on StreamGive
+itself.
