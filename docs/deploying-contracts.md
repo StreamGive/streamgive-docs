@@ -6,7 +6,7 @@ sidebar_position: 4
 
 ## Prerequisites
 
-- Rust with the `wasm32-unknown-unknown` target: `rustup target add wasm32-unknown-unknown`
+- Rust with the `wasm32v1-none` target: `rustup target add wasm32v1-none`
 - The [Stellar CLI](https://developers.stellar.org/docs/tools/cli): `winget install --id Stellar.StellarCLI` (or `cargo install --locked stellar-cli`)
 - A funded identity on whichever network you're deploying to
 
