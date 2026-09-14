@@ -22,8 +22,19 @@ someone's personal one.
 
 Go to `/apply` on the app, connect that wallet, and fill in your
 organization's name, a description, a contact email, and optionally a
-website and country. Submitting doesn't cost anything or touch the
-blockchain — it's an off-chain form the platform admin reviews.
+website and country.
+
+Submitting does two things. First your wallet asks you to sign one
+transaction, which registers your address in the on-chain registry — that
+signature is what proves the address is actually yours, so it has to come
+from the wallet itself and costs a small amount of XLM in network fees.
+Then the rest of the form is sent off-chain for the platform admin to
+review.
+
+Both steps matter: the admin approves you by calling `approve_ngo` against
+your registry entry, and that call fails outright if the entry is not
+there. An application without the on-chain registration behind it is one
+nobody can approve.
 
 You'll get one pending application per address at a time; submitting
 again while one is already pending is rejected, not queued.
