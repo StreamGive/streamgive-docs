@@ -63,6 +63,10 @@ const config: Config = {
   themeConfig: {
     navbar: {
       title: 'StreamGive',
+      logo: {
+        alt: 'StreamGive',
+        src: 'img/logo.svg',
+      },
       items: [
         { type: 'docSidebar', sidebarId: 'docsSidebar', position: 'left', label: 'Docs' },
         {

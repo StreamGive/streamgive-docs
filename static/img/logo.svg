@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="8 14 85 72" width="85" height="72">
+  <!-- Navbar mark, monochrome. Docusaurus loads this through an <img>, so
+       currentColor is not available; the media query below flips it instead,
+       which keeps one file working in both the light and dark themes. -->
+  <style>
+    .mark { stroke: #1c1e21; fill: #1c1e21; }
+    @media (prefers-color-scheme: dark) {
+      .mark { stroke: #e3e3e3; fill: #e3e3e3; }
+    }
+  </style>
+
+  <g class="mark" fill="none" stroke-width="9.5" stroke-linecap="round">
+    <path d="M13 19 C37 19 38 50 54 50"/>
+    <path d="M13 50 L54 50"/>
+    <path d="M13 81 C37 81 38 50 54 50"/>
+  </g>
+  <circle class="mark" cx="79" cy="50" r="13.5" stroke="none"/>
+</svg>
